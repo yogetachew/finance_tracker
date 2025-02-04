@@ -1,0 +1,19 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore IDE and editor files
+.vscode/
+*.sublime-workspace
+
+# Ignore OS system files
+.DS_Store
+
+# Ignore CSV files (optional: if you don’t want to track transaction data)
+data/transactions.csv
