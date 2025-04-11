@@ -1,6 +1,7 @@
 from tracker import add_transaction, view_transactions, EXPENSE_CATEGORIES, INCOME_CATEGORIES
 from budget import calculate_budget
 from savings import set_savings_goal, check_savings_progress
+from visuals import expense_pie_chart, savings_line_graph
 
 
 # Main function to run program
@@ -14,7 +15,9 @@ def main():
         print("4. View Budget Status")
         print("5. Set Savings Goal")
         print("6. View Savings Progress")
-        print("7. Exit")
+        print("7. View Expense Pie Chart")
+        print("8. View Savings Trend Graph")
+        print("9. Exit")
         
         # Get user input. it is for menu selection
         choice = input("Choose an option: ")
@@ -54,8 +57,14 @@ def main():
 
         elif choice == "6":
             check_savings_progress()
-
+            
         elif choice == "7":
+            expense_pie_chart()
+
+        elif choice == "8":
+            savings_line_graph()
+
+        elif choice == "9":
             print("Exiting... Have a great day!")
             break
 
